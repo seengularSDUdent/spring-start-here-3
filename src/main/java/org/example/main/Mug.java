@@ -11,8 +11,4 @@ public class Mug {
         return name;
     }
 
-    @Override
-    public String toString() {
-        return "Mug: " + name;
-    }
 }

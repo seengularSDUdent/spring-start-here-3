@@ -11,7 +11,7 @@ public class Main {
         System.out.println(samplePerson.getName());
 
         Mug sampleMug = context.getBean(Mug.class);
-        System.out.println(sampleMug.getName());
+        System.out.println(sampleMug);
 
         System.out.println(samplePerson.getMug());
 

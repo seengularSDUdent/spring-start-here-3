@@ -13,6 +13,7 @@ public class SpringConfiguration {
     Person person(){
         Person beanPerson = new Person();
         beanPerson.setName("Kuralai");
+        beanPerson.setMug(mug());
         return beanPerson;
     }
 
