@@ -10,10 +10,10 @@ import org.springframework.context.annotation.Configuration;
 public class SpringConfiguration {
 
     @Bean
-    Person person(){
+    Person person(Mug mug){
         Person beanPerson = new Person();
         beanPerson.setName("Kuralai");
-        beanPerson.setMug(mug());
+        beanPerson.setMug(mug);
         return beanPerson;
     }
 

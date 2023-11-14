@@ -1,5 +1,7 @@
 package org.example.main;
 
+import org.springframework.stereotype.Component;
+
 public class Mug {
     private String name;
 
