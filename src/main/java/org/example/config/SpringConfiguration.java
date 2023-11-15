@@ -19,10 +19,17 @@ public class SpringConfiguration {
 //        return beanPerson;
 //    }
 
-//    @Bean
-//    Mug mug(){
-//        Mug beanMug = new Mug();
-//        beanMug.setName("Kuralai's Mug");
-//        return beanMug;
-//    }
+    @Bean(name = "kuralaimug")
+    Mug mug(){
+        Mug beanMug = new Mug();
+        beanMug.setName("Kuralai's Mug");
+        return beanMug;
+    }
+
+    @Bean(value = "armanmug")
+    Mug mug1(){
+        Mug beanMug = new Mug();
+        beanMug.setName("Arman's Mug");
+        return beanMug;
+    }
 }

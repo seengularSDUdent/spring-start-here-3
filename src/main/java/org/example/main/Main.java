@@ -10,7 +10,7 @@ public class Main {
         Person samplePerson = context.getBean(Person.class);
         System.out.println(samplePerson.getName());
 
-        Mug sampleMug = context.getBean(Mug.class);
+        Mug sampleMug = context.getBean("kuralaimug", Mug.class);
         System.out.println(sampleMug);
 
         System.out.println(samplePerson.getMug());
