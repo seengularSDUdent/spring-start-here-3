@@ -7,8 +7,12 @@ import org.springframework.stereotype.Component;
 public class Person {
     private String name;
 
+    private final Mug mug;
+
     @Autowired
-    private Mug mug;
+    public Person(Mug mug) {
+        this.mug = mug;
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -18,9 +22,9 @@ public class Person {
         return this.name;
     }
 
-    public void setMug(Mug mug){
-        this.mug = mug;
-    }
+//    public void setMug(Mug mug){
+//        this.mug = mug;
+//    }
 
     public Mug getMug(){
         return this.mug;
