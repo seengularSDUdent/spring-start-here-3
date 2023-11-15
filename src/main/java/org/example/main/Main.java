@@ -14,8 +14,5 @@ public class Main {
         System.out.println(sampleMug);
 
         System.out.println(samplePerson.getMug());
-
-        samplePerson.setMug(sampleMug);
-        System.out.println(samplePerson.getMug());
     }
 }

@@ -2,6 +2,7 @@ package org.example.main;
 
 import org.springframework.stereotype.Component;
 
+@Component
 public class Mug {
     private String name;
 
